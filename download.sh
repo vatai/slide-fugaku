@@ -3,7 +3,7 @@
 [ -e HashingDeepLearning ] || git clone git@github.com:keroro824/HashingDeepLearning.git
 mkdir HashingDeepLearning/dataset
 
-([ -f Amazon670K.bow.zip ] || wget https://github.com/ficstamas/slide-fugaku/releases/download/files/Amazon670K.bow.zip) && unzip Amazon670K.bow.zip -d HashingDeepLearning/dataset/
+([ -f Amazon670K.bow.zip ] || wget https://github.com/ficstamas/slide-fugaku/releases/download/files/Amazon670K.bow.zip) && unzip -u Amazon670K.bow.zip -d HashingDeepLearning/dataset/
 
 cat <<EOT > HashingDeepLearning/SLIDE/Config_amz.csv
 RangePow = 6,18
