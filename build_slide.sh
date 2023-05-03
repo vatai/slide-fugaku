@@ -2,7 +2,7 @@
 
 pushd HashingDeepLearning
 mkdir bin
-push bin
+pushd bin
 cmake ..
 make -j CC=fcc CXX=FCC
 ./runme ../SLIDE/Config_amz.csv
