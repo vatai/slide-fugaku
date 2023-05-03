@@ -5,7 +5,7 @@ mkdir HashingDeepLearning/dataset
 
 ([ -f Amazon670K.bow.zip ] || wget https://github.com/ficstamas/slide-fugaku/releases/download/files/Amazon670K.bow.zip) && unzip Amazon670K.bow.zip -d HashingDeepLearning/dataset/
 
-cat > HashingDeepLearning/SLIDE/Config_amz.csv <<EOF
+cat <<EOF > HashingDeepLearning/SLIDE/Config_amz.csv
 RangePow = 6,18
 K = 2,6
 L = 20,50
